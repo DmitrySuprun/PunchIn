@@ -24,9 +24,9 @@ public func configure(_ app: Application) throws {
 
     app.migrations.add(CreateTodo())
     
-    if app.environment == .development {
+//    if app.environment == .development {
         try app.autoMigrate().wait()
-    }
+//    }
 
     // register routes
     try routes(app)
